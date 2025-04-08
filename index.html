@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Developer SA-MP yang mengembangkan XMC, bahasa scripting modular untuk San Andreas Multiplayer.">
-  <title>XMC Developer | SA-MP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>XMC - Bahasa Modern Pawn untuk SA-MP</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -15,130 +15,90 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #0a0a0a;
-      color: #f0f0f0;
+      background: #0a0a0a;
+      color: #f5f5f5;
       line-height: 1.8;
-      transition: background-color 0.4s ease, color 0.4s ease;
+      padding: 50px 20px;
     }
 
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 50px 25px;
-      animation: fadeIn 1.2s ease-in-out;
+      background: #111111;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 200, 0.05);
+      border-left: 5px solid #00ffe1;
+      animation: fadeIn 1.2s ease;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 50px;
-      padding-bottom: 25px;
-      border-bottom: 2px solid #00d1b2;
-    }
-
-    header h1 {
-      font-size: 34px;
-      color: #00d1b2;
-      font-weight: 600;
-    }
-
-    section {
-      margin-bottom: 35px;
+    h1 {
+      font-size: 2.8rem;
+      color: #00ffe1;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ffe1;
+      animation: slideDown 0.8s ease;
     }
 
     h2 {
-      color: #00d1b2;
-      font-size: 26px;
-      margin-bottom: 12px;
+      font-size: 1.6rem;
+      margin-top: 30px;
+      color: #00d9ff;
+      border-left: 4px solid #00d9ff;
+      padding-left: 12px;
     }
 
-    ul {
-      padding-left: 20px;
+    p {
+      margin: 15px 0;
+      color: #d9d9d9;
+      font-size: 1.05rem;
     }
 
-    ul li {
-      margin-bottom: 10px;
-      transition: color 0.3s ease;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    ul li:hover {
-      color: #00fff7;
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .bubble {
-      background-color: #151515;
-      border-left: 5px solid #00d1b2;
-      padding: 22px;
-      border-radius: 14px;
-      box-shadow: 0 0 20px rgba(0, 209, 178, 0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .bubble:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0 30px rgba(0, 209, 178, 0.2);
+    .highlight {
+      color: #00ffe1;
+      font-weight: bold;
     }
 
     footer {
       text-align: center;
-      padding-top: 30px;
-      color: #666;
-      font-size: 14px;
-      border-top: 1px solid #222;
       margin-top: 50px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 28px;
-      }
-
-      h2 {
-        font-size: 22px;
-      }
-
-      .container {
-        padding: 35px 15px;
-      }
+      color: #555;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>XMC Developer untuk SA-MP</h1>
-    </header>
+    <h1>Apa itu XMC?</h1>
+    <p><span class="highlight">XMC (eXtended Modern Compiler)</span> adalah bahasa pemrograman modern berbasis <span class="highlight">Pawn</span> yang dikembangkan khusus untuk server <span class="highlight">GTA San Andreas Multiplayer (SA-MP)</span>. Bahasa ini dirancang oleh <span class="highlight">VatieraSynth</span>, seorang developer profesional yang telah lama berkecimpung dalam dunia scripting dan pengembangan server SAMP.</p>
 
-    <section class="bubble">
-      <p><strong>XMC</strong> adalah sistem scripting modular untuk server SA-MP. Dikembangkan oleh <strong>R e d</strong>, sistem ini terkenal karena arsitektur modular dan efisiennya.</p>
-    </section>
+    <h2>Kenapa XMC Dibuat?</h2>
+    <p>XMC hadir karena keterbatasan pada Pawn klasik yang sulit dikembangkan secara modular, modern, dan efisien. Dengan syntax yang lebih bersih, fitur scripting tingkat lanjut, dan dukungan penuh terhadap struktur OOP modern, XMC menjadi solusi generasi baru scripting SA-MP.</p>
 
-    <section>
-      <h2>Kenapa XMC Populer?</h2>
-      <p>XMC sangat disukai karena struktur script-nya bersih dan mendukung pengembangan sistem besar dengan command dan event modular.</p>
-    </section>
+    <h2>Fitur Unggulan XMC</h2>
+    <p>- Struktur modular dan fleksibel</p>
+    <p>- Dukungan penuh terhadap event handler modern</p>
+    <p>- Integrasi mudah dengan plugin seperti MySQL, HTTP, dan JSON</p>
+    <p>- Kompatibel dengan PAWN asli, tapi dengan syntax lebih ringan dan powerful</p>
 
-    <section>
-      <h2>Fitur Unggulan</h2>
-      <ul>
-        <li>Command handler canggih</li>
-        <li>Performa tinggi dan stabil</li>
-        <li>Event system efisien dan fleksibel</li>
-        <li>Struktur file rapi dan scalable</li>
-      </ul>
-    </section>
+    <h2>Developer XMC</h2>
+    <p><span class="highlight">VatieraSynth</span>, developer asal Indonesia, adalah pencipta XMC. Ia merupakan spesialis scripting server SA-MP dengan dedikasi tinggi dalam menghadirkan teknologi modern ke dalam platform klasik. Dengan latar belakang luas di bidang programming dan inovasi digital, VatieraSynth menjadikan XMC sebagai salah satu bahasa scripting paling revolusioner dalam dunia SA-MP.</p>
 
-    <section>
-      <h2>Penutup</h2>
-      <p>XMC cocok untuk developer yang ingin membangun server SA-MP berkualitas tinggi dengan sistem scripting modern dan modular.</p>
-    </section>
+    <h2>Masa Depan XMC</h2>
+    <p>XMC bukan hanya sekadar bahasa, melainkan pondasi baru bagi komunitas SA-MP untuk membangun server yang lebih stabil, efisien, dan menawan. Dengan dokumentasi yang terus dikembangkan dan komunitas yang terus bertumbuh, XMC siap menjadi tulang punggung generasi baru server roleplay, freeroam, dan project modding lainnya.</p>
 
     <footer>
-      &copy; 2025 VatieraSynth | Dev SA-MP
+      Artikel ini ditulis oleh <span class="highlight">VatieraSynth (XMC Developer)</span> | Elegan Premium Universe.
     </footer>
   </div>
 </body>
